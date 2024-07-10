@@ -6,11 +6,11 @@
 # ---
 
 # Load Libraries ----------------------------------------------------------------------------------------------------------------
-library (tidyverse)
-library (vegan)
-library (proxy)
+library(tidyverse)
+library(vegan)
+library(proxy)
 library(reshape2)
-library(microDecon)
+library(microDecon) # Requires devtools::install_github("donaldtmcknight/microDecon")
 library(stringr)
 library(knitr)
 library(ranacapa)
@@ -19,17 +19,17 @@ library(tibble)
 library(reshape2)
 library(phyloseq)
 library(ggplot2)
-library(plotly)
+library(plotly)  
 library(optparse)
 library(fitdistrplus)
 library(rstan)
 library(shinystan)
 library(bayesplot)
 library(broom)
-library(analyze.stuff)
-
-source("/Users/zackgold/Documents/UCLA_phd/Projects/anacapa/decontam/decontamination_utilities.R")
+library(analyze.stuff) # Requires devtools::install_github("ejanalysis/analyze.stuff")
 library(here)
+
+source(here("decontamination_utilities.R"))
 
 #Test inputs ----------------------------------------------------------------------------------------------------------------
 working_directory <- here("data","fish","decontamination")

@@ -28,8 +28,9 @@ library(bayesplot)
 library(broom)
 library(analyze.stuff)
 
-source("/Users/zackgold/Documents/UCLA_phd/Projects/anacapa/decontam/decontamination_utilities.R")
 library(here)
+source(here("decontamination_utilities.R"))
+
 
 #Test inputs ----------------------------------------------------------------------------------------------------------------
 working_directory <- here("data","Anacapa_output_old","decontamination")
